@@ -19,42 +19,71 @@ function clickAfueraMenu(event) {
 }
 
 
-// Crear Carta
 const comentarios = document.getElementById('comentario');
+const comentariosContainer = document.getElementById('comentarios-container');
 
 comentarios.onclick = function() {
-  Carta = document.createElement('div');
+  const Carta = document.createElement('div');
   Carta.classList.add('comentar');
   Carta.innerHTML = `
-  <div class="comentarios-container">
-  <div class="hr-container">
-    <hr />
-    <h4>Comentarios</h4>
-    <hr />
-  </div>
-  <p>Comentario:</p>
-  <textarea></textarea><br>
-  <ul>
-  <div class="Icon-Container">
-    <img id="" src="me-gusta.png" width="18px" height="auto" alt="icono"><span id="contadorLikes"></span>
+    <div class="comentarios-container">
+      <div class="hr-container">
+        <hr />
+        <h4>Comentarios</h4>
+        <hr />
+      </div>
+      <p>Comentario:</p>
+      <textarea id="comentarioText"></textarea><br>
+      <button id="postearBtn">Postear</button>
+      <ul>
+        <div class="Icon-Container">
+          <img id="" src="images/me-gusta.png" width="18px" height="auto" alt="icono"><span id="contadorLikes"></span>
+        </div>
+        <div class="Icon-Container">
+          <img src="images/compartir.png" width="18px" height="auto" alt="icono">
+        </div>
+      </ul>
     </div>
-    <div class="Icon-Container">
-    <img src="compartir.png" width="18px" height="auto" alt="icono">
-    </div>
-  </ul>
-  </div>
-  <img id="cerrarComent" onclick="cerrarComentarios()" src="suelta-la-flecha.png" width="25px" height="auto"/>
-</div>
-  `
-document.body.appendChild(Carta);
+    <img id="cerrarComent" onclick="cerrarComentarios()" src="images/suelta-la-flecha.png" width="25px" height="auto"/>
+  `;
+  document.body.appendChild(Carta);
+  
+  // Postear el comentario al hacer clic en el botón "Postear"
+  const postearBtn = document.getElementById('postearBtn');
+  postearBtn.onclick = function() {
+    const comentarioTexto = document.getElementById('comentarioText').value;
+    guardarComentario(comentarioTexto);
+    Carta.remove();
+    mostrarComentarios();
+  };
+  
+  // Mostrar los comentarios al cargar la página
+  mostrarComentarios();
 };
-var cerrarComent = document.getElementById('cerrarComent');
 
-function cerrarComentarios() {
-  Carta.remove();
+function guardarComentario(comentario) {
+  let comentariosGuardados = localStorage.getItem('comentarios');
+  if (!comentariosGuardados) {
+    comentariosGuardados = [];
+  } else {
+    comentariosGuardados = JSON.parse(comentariosGuardados);
+  }
+  
+  comentariosGuardados.push(comentario);
+  localStorage.setItem('comentarios', JSON.stringify(comentariosGuardados));
 }
 
-// Likes // localStorage
+function mostrarComentarios() {
+  const comentariosGuardados = localStorage.getItem('comentarios');
+  if (comentariosGuardados) {
+    const comentariosArray = JSON.parse(comentariosGuardados);
+    const contadorLikes = document.getElementById('contadorLikes');
+    contadorLikes.textContent = comentariosArray.length;
+  }
+}
+
+
+// Likes
 const contadorLikes = document.getElementById('contadorLikes');
 const botonLike = document.getElementById('botonLike');
 
@@ -107,8 +136,10 @@ function toggleCamera() {
       })
       .catch(function(error) {
         console.error('Error al acceder a la cámara:', error);
+        // Aquí puedes manejar el error, mostrar un mensaje al usuario, etc.
       });
   }
 }
 
 
+    
