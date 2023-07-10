@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consultorio Online</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<nav id="navMenu">
+   <button id="menuButton">Menú</button>
+  <ul id="ulMenu">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Contacto</a></li>
+    <li><a href="#">Turnos</a></li>
+  </ul>
+</nav>
+<div class="hero-card">
+  <div id="routerInterface">
+    <img src="images/herbie.jpg" width="100%" height="100%"></>
+    <div class="title">
+    <h5>Herbie Hancock - Master Playlist
+        Greatest hits songs from 1987</h5>
+    </div>
+  </div>
+  <hr>
+  <div class="Icon-Container">
+  <div class="Icon">
+    <img id="github" src="images/github.png" width="25px" height="auto" alt="icono">
+  </div>
+   <div class="Icon">
+    <img id="comentario" src="images/comentario.png" width="25px" height="auto" alt="icono">
+  </div>
+   <div class="Icon">
+    <img id="botonLike" src="images/me-gusta.png" width="25px" height="auto" alt="icono"><span id="contadorLikes"></span>
+  </div>
+  </div>
+  </div>
+  <div class="funcion-camara">
+  <img src="images/camara-retro.png" id="toggleCameraButton" onclick="toggleCamera()" width="45px" height="auto"></img>
+<video id="videoElement" autoplay></video>
+</div>
+
+ <script src="script.js"></script>
+</body>
+</html

@@ -1,0 +1,103 @@
+body {
+  background-color: #333;
+}
+.hero-card {
+  margin-top: 20px;
+  background-color: #666;
+  padding: 10px;
+  border-radius: 8px;
+}
+.comentar {
+  width: 100%;
+}
+.comentarios-container {
+    text-align: left;
+}
+.comentarios-container textarea {
+  width: 100%;
+}
+
+#contadorLikes {
+  margin: 6px;
+  background-color: tomato;
+  padding: 0 3px;
+  border-radius: 50px;
+  color: white;
+}
+.hr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.hr-container hr {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #666;
+    border: none;
+    margin: 0 10px;
+}
+#routerInterface {
+  width: 100%;
+  height: auto;
+  padding: 6px;
+  display: flex;
+}
+#routerInterface img {
+  border-radius: 8px;
+  width: 150px;
+}
+.title {
+  display: block;
+  margin: 10px;
+}
+#ulMenu a {
+  text-decoration: none;
+}
+#navMenu {
+  background-color: #666;
+  padding: 6px;
+}
+#navMenu button {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid green;
+  background-color: #999;
+  border-radius: 50px;
+}
+#navMenu ul {
+  display: none;
+  animation: deslizamiento .6s ease-in;
+}
+#navMenu li {
+  list-style: none;
+}
+@keyframes deslizamiento {
+  0% {
+    opacity: 0;
+    transform: width 0;
+  }
+  100% {
+    opacity: 1;
+    transform: width 300px;
+  }
+}
+.Icon-Container {
+  display: inline-flex;
+}
+.Icon-Container ul {
+  display: inline-flex;
+}
+.Icon-Container li {
+  list-style: none;
+}
+.Icon {
+  margin: 12px;
+}
+#cerrarComent {
+  position: relative;
+}
+/* Cámara */
+.funcion-camara {
+  margin: 12px;
+}
