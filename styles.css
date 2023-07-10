@@ -97,6 +97,7 @@ body {
 }
 #cerrarComent {
   position: relative;
+  left: 50%;
 }
 /* Cámara */
 .funcion-camara {
