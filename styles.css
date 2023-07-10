@@ -102,3 +102,16 @@ body {
 .funcion-camara {
   margin: 12px;
 }
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+   body {
+     width: fit-content:
+   }
+  .hero-card {
+    width: 100%;
+  }
+  .funcion-camara {
+    width: 100%;
+  }
+}
