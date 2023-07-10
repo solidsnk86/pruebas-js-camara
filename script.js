@@ -107,7 +107,6 @@ function toggleCamera() {
       })
       .catch(function(error) {
         console.error('Error al acceder a la cámara:', error);
-        // Aquí puedes manejar el error, mostrar un mensaje al usuario, etc.
       });
   }
 }
