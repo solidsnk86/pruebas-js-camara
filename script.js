@@ -43,7 +43,7 @@ comentarios.onclick = function() {
     </div>
   </ul>
   </div>
-  <img id="cerrarComent" onclick="cerrarComentarios()" src="images/suelta-la-flecha.png" width="25px" height="auto"/>
+  <img id="cerrarComent" onclick="cerrarComentarios()" src="suelta-la-flecha.png" width="25px" height="auto"/>
 </div>
   `
 document.body.appendChild(Carta);
@@ -54,7 +54,7 @@ function cerrarComentarios() {
   Carta.remove();
 }
 
-// Likes
+// Likes // localStorage
 const contadorLikes = document.getElementById('contadorLikes');
 const botonLike = document.getElementById('botonLike');
 
