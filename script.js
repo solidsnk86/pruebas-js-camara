@@ -36,10 +36,10 @@ comentarios.onclick = function() {
   <textarea></textarea><br>
   <ul>
   <div class="Icon-Container">
-    <img id="" src="images/me-gusta.png" width="18px" height="auto" alt="icono"><span id="contadorLikes"></span>
+    <img id="" src="me-gusta.png" width="18px" height="auto" alt="icono"><span id="contadorLikes"></span>
     </div>
     <div class="Icon-Container">
-    <img src="images/compartir.png" width="18px" height="auto" alt="icono">
+    <img src="compartir.png" width="18px" height="auto" alt="icono">
     </div>
   </ul>
   </div>
