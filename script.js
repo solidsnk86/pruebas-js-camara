@@ -37,14 +37,14 @@ comentarios.onclick = function() {
       <button id="postearBtn">Postear</button>
       <ul>
         <div class="Icon-Container">
-          <img id="" src="images/me-gusta.png" width="18px" height="auto" alt="icono"><span id="contadorLikes"></span>
+          <img id="" src="me-gusta.png" width="18px" height="auto" alt="icono"><span id="contadorLikes"></span>
         </div>
         <div class="Icon-Container">
-          <img src="images/compartir.png" width="18px" height="auto" alt="icono">
+          <img src="compartir.png" width="18px" height="auto" alt="icono">
         </div>
       </ul>
     </div>
-    <img id="cerrarComent" onclick="cerrarComentarios()" src="images/suelta-la-flecha.png" width="25px" height="auto"/>
+    <img id="cerrarComent" onclick="cerrarComentarios()" src="suelta-la-flecha.png" width="25px" height="auto"/>
   `;
   document.body.appendChild(Carta);
   
