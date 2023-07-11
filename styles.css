@@ -109,6 +109,9 @@ body {
    body {
      width: 100%:
    }
+  #navMenu {
+    width: 100%;
+  }
   .hero-card {
     width: fit-content;
   }
