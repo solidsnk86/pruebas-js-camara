@@ -1,1 +1,1 @@
-![GitHub top language](https://img.shields.io/github/languages/top/:solidsnk86/:pruebas-js-camara)
+[![Static Badge](https://img.shields.io/badge/Acceso-a-CamaraWebgreen)]
