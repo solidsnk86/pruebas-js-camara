@@ -1,1 +1,1 @@
-[![Static Badge](https://img.shields.io/badge/Acceso-Camaragreen)
+![Dynamic XML Badge](https://img.shields.io/badge/dynamic/xml)
