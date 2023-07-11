@@ -1,1 +1,1 @@
-![GitHub top language](https://img.shields.io/github/languages/top/:solidsnk86/:repo)
+![GitHub top language](https://img.shields.io/github/languages/top/:solidsnk86/:pruebas-js-camara)
