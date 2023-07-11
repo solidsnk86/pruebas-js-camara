@@ -110,7 +110,7 @@ body {
      width: 100%:
    }
   .hero-card {
-    width: 100%;
+    width: fit-content;
   }
   .funcion-camara {
     width: 100%;
