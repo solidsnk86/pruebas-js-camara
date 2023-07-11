@@ -1,1 +1,1 @@
-[![Static Badge](https://img.shields.io/badge/Acceso-a-CamaraWebgreen)]
+[![Static Badge](https://img.shields.io/badge/Acceso-Camaragreen)
